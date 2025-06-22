@@ -1,0 +1,87 @@
+[
+  {
+    "ContainingType": "Driver.App.Controller.DriverController",
+    "Method": "RemoveCache",
+    "RelativePath": "api/Driver/accept-booking",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Driver.App.Controller.DriverController",
+    "Method": "AcceptBooking",
+    "RelativePath": "api/Driver/accept-booking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trip",
+        "Type": "Driver.App.Model.Trip",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Driver.App.Controller.DriverController",
+    "Method": "Login",
+    "RelativePath": "api/Driver/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Driver.App.Controller.DriverController",
+    "Method": "Logout",
+    "RelativePath": "api/Driver/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "driverId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Driver.App.Controller.DriverController",
+    "Method": "PushFCMKey",
+    "RelativePath": "api/Driver/push-fcm",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "driverId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fcmToken",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

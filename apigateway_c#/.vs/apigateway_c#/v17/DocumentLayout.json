@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SWD\\Micro_SWD\\apigateway_c#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1746888D-B121-417A-A9C4-DEC812572EB7}|apigateway_c#\\apigateway_c#.csproj|d:\\swd\\micro_swd\\apigateway_c#\\apigateway_c#\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1746888D-B121-417A-A9C4-DEC812572EB7}|apigateway_c#\\apigateway_c#.csproj|solutionrelative:apigateway_c#\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1746888D-B121-417A-A9C4-DEC812572EB7}|apigateway_c#\\apigateway_c#.csproj|d:\\swd\\micro_swd\\apigateway_c#\\apigateway_c#\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1746888D-B121-417A-A9C4-DEC812572EB7}|apigateway_c#\\apigateway_c#.csproj|solutionrelative:apigateway_c#\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1746888D-B121-417A-A9C4-DEC812572EB7}|apigateway_c#\\apigateway_c#.csproj|d:\\swd\\micro_swd\\apigateway_c#\\apigateway_c#\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1746888D-B121-417A-A9C4-DEC812572EB7}|apigateway_c#\\apigateway_c#.csproj|solutionrelative:apigateway_c#\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1746888D-B121-417A-A9C4-DEC812572EB7}|apigateway_c#\\apigateway_c#.csproj|d:\\swd\\micro_swd\\apigateway_c#\\apigateway_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1746888D-B121-417A-A9C4-DEC812572EB7}|apigateway_c#\\apigateway_c#.csproj|solutionrelative:apigateway_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:332826238:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\apigateway_c#\\apigateway_c#\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "apigateway_c#\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\apigateway_c#\\apigateway_c#\\Properties\\launchSettings.json",
+              "RelativeToolTip": "apigateway_c#\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-22T15:10:11.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\apigateway_c#\\apigateway_c#\\Program.cs",
+              "RelativeDocumentMoniker": "apigateway_c#\\Program.cs",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\apigateway_c#\\apigateway_c#\\Program.cs",
+              "RelativeToolTip": "apigateway_c#\\Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwBkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T07:43:33.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ocelot.json",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\apigateway_c#\\apigateway_c#\\ocelot.json",
+              "RelativeDocumentMoniker": "apigateway_c#\\ocelot.json",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\apigateway_c#\\apigateway_c#\\ocelot.json",
+              "RelativeToolTip": "apigateway_c#\\ocelot.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-15T07:43:19.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\apigateway_c#\\apigateway_c#\\appsettings.json",
+              "RelativeDocumentMoniker": "apigateway_c#\\appsettings.json",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\apigateway_c#\\apigateway_c#\\appsettings.json",
+              "RelativeToolTip": "apigateway_c#\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-15T07:40:19.079Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 120,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

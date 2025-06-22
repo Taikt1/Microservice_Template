@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "QGB/CxdgZr4LcqqFsuthXEBGftj1SHS2Cn131ta2Olw=",
+  "Source": "apigateway_c#",
+  "BasePath": "_content/apigateway_c#",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

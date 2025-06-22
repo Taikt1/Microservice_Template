@@ -1,0 +1,192 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SWD\\Micro_SWD\\Notification\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|d:\\swd\\micro_swd\\notification\\notification.app\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|solutionrelative:notification.app\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|d:\\swd\\micro_swd\\notification\\notification.app\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|solutionrelative:notification.app\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|d:\\swd\\micro_swd\\notification\\notification.app\\event\\tripevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|solutionrelative:notification.app\\event\\tripevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|d:\\swd\\micro_swd\\notification\\notification.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|solutionrelative:notification.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|d:\\swd\\micro_swd\\notification\\notification.app\\kafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|solutionrelative:notification.app\\kafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|d:\\swd\\micro_swd\\notification\\notification.app\\event\\orderdriverlistevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|solutionrelative:notification.app\\event\\orderdriverlistevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|d:\\swd\\micro_swd\\notification\\notification.app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|solutionrelative:notification.app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|d:\\swd\\micro_swd\\notification\\notification.app\\kafkaproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B79FD09-FAF8-4D71-9105-A927619B0D83}|Notification.App\\Notification.App.csproj|solutionrelative:notification.app\\kafkaproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:332826238:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Notification.App\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Notification.App\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-22T15:12:56.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "Notification.App\\Controllers\\NotificationController.cs",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "Notification.App\\Controllers\\NotificationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T07:51:40.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TripEvent.cs",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Event\\TripEvent.cs",
+              "RelativeDocumentMoniker": "Notification.App\\Event\\TripEvent.cs",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Event\\TripEvent.cs",
+              "RelativeToolTip": "Notification.App\\Event\\TripEvent.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T07:45:50.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\appsettings.json",
+              "RelativeDocumentMoniker": "Notification.App\\appsettings.json",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\appsettings.json",
+              "RelativeToolTip": "Notification.App\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-22T07:42:22.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KafkaProducerService.cs",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\KafkaProducerService.cs",
+              "RelativeDocumentMoniker": "Notification.App\\KafkaProducerService.cs",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\KafkaProducerService.cs",
+              "RelativeToolTip": "Notification.App\\KafkaProducerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T07:42:21.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderDriverListEvent.cs",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Event\\OrderDriverListEvent.cs",
+              "RelativeDocumentMoniker": "Notification.App\\Event\\OrderDriverListEvent.cs",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Event\\OrderDriverListEvent.cs",
+              "RelativeToolTip": "Notification.App\\Event\\OrderDriverListEvent.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T07:41:37.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Program.cs",
+              "RelativeDocumentMoniker": "Notification.App\\Program.cs",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\Program.cs",
+              "RelativeToolTip": "Notification.App\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T07:32:48.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KafkaConsumerService.cs",
+              "DocumentMoniker": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\KafkaConsumerService.cs",
+              "RelativeDocumentMoniker": "Notification.App\\KafkaConsumerService.cs",
+              "ToolTip": "D:\\SWD\\Micro_SWD\\Notification\\Notification.App\\KafkaConsumerService.cs",
+              "RelativeToolTip": "Notification.App\\KafkaConsumerService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T07:32:37.75Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 120,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

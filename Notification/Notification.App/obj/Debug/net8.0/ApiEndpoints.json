@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "Notification.App.Controllers.DriverController",
+    "Method": "Ping",
+    "RelativePath": "api/Driver/ping",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

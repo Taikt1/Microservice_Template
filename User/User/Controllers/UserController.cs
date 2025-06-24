@@ -5,6 +5,7 @@ using TestKafka.Redis;
 using TestKafka.Service;
 using MongoDB.Bson;
 using Microsoft.AspNetCore.DataProtection.KeyManagement;
+using User.Model;
 
 
 namespace TestKafka.Controllers
@@ -29,7 +30,7 @@ namespace TestKafka.Controllers
         {
             // Xử lý đăng nhập ở đây
             var login = await _userService.Login(request.Email, request.Password);
-            if(login != null)
+            if (login != null)
             {
                 return Ok(new { status = login });
             }
@@ -48,7 +49,7 @@ namespace TestKafka.Controllers
                 PickupLocation = trip.PickupLocation,
                 DropoffLocation = trip.DropoffLocation,
                 CreatedAt = DateTime.UtcNow,
-                Status = null   
+                Status = null
             };
 
             await _producer.ProduceAsync("find_car", evt.Id.ToString(), evt);
@@ -84,6 +85,32 @@ namespace TestKafka.Controllers
             return Ok(new { message = "Da dang xuat thanh cong" });
         }
 
-        
+        [HttpGet("id")]
+        public async Task<IActionResult> GetUserById([FromQuery] string id)
+        {
+            if (string.IsNullOrEmpty(id))
+                return BadRequest("Id cannot be null or empty");
+            var user = await _userService.GetUserById(id);
+            if (user == null)
+                return NotFound("User not found");
+            return Ok(user);
+        }
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] UserRequest request)
+        {
+
+            var user = new ApplicationUser
+            {
+                Email = request.Email,
+                Password = request.Password, // Mã hóa mật khẩu nếu cần
+                Name = request.Name,
+                Phone = request.Phone
+            };
+
+            // Xử lý đăng ký ở 
+            await _userService.CreateUser(user);
+            return Ok();
+        }
     }
 }

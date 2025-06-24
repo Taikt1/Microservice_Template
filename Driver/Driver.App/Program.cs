@@ -1,6 +1,8 @@
 
 using Driver.App;
+using Driver.App.Model;
 using Driver.App.Redis;
+using Driver.Service;
 using StackExchange.Redis;
 
 namespace Notification.App
@@ -22,8 +24,8 @@ namespace Notification.App
             builder.Services.AddSingleton(typeof(KafkaConsumerService<,>));
             builder.Services.AddSingleton(typeof(KafkaProducerService<,>));
             builder.Services.AddSingleton<IResponseCache, ResponseCache>();
-
-
+            builder.Services.AddSingleton<UserService>();
+            builder.Services.AddSingleton<MongoContext>();
 
             var redisConfig = builder.Configuration.GetSection("Redis");
             string redisConnectionString = redisConfig.GetValue<string>("ConnectionString");

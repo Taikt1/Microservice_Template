@@ -1,4 +1,5 @@
 ﻿using MongoDB.Driver;
+using User.Model;
 
 namespace TestKafka.Model
 {
@@ -12,7 +13,7 @@ namespace TestKafka.Model
 
         }
 
-        public IMongoCollection<User> Users => _database.GetCollection<User>("User");
+        public IMongoCollection<ApplicationUser> Users => _database.GetCollection<ApplicationUser>("User");
 
     }
 }

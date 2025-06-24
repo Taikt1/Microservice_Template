@@ -1,9 +1,9 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 
-namespace TestKafka.Model
+namespace User.Model
 {
-    public class User
+    public class ApplicationUser
     {
         [BsonId] // ⬅ Gắn để Mongo biết đây là _id
         [BsonRepresentation(BsonType.ObjectId)]

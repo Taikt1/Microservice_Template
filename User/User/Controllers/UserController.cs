@@ -81,7 +81,7 @@ namespace TestKafka.Controllers
         [HttpPost("logout")]
         public async Task<IActionResult> Logout([FromQuery] string userId)
         {
-            await _responseCache.DeleteKeyInRedis("fcm-token-user:", userId);
+            await _responseCache.DeleteKeyInRedis("fcm-token-user", userId);
             return Ok(new { message = "Da dang xuat thanh cong" });
         }
 

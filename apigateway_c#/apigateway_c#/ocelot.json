@@ -33,7 +33,7 @@
           "Port": 7122
         }
       ],
-      "UpstreamPathTemplate": "/driver/{everything}",
+      "UpstreamPathTemplate": "/test/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
 

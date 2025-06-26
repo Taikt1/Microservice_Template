@@ -47,13 +47,13 @@ namespace TestKafka
 
             builder.Services.AddHostedService<RedisKeyExpirationSubscriber>(); //Trigger chay background khi key het han
 
-            builder.Services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAllOrigins",
-                    builder => builder.AllowAnyOrigin()
-                                      .AllowAnyMethod()
-                                      .AllowAnyHeader());
-            });
+            //builder.Services.AddCors(options =>
+            //{
+            //    options.AddPolicy("AllowAllOrigins",
+            //        builder => builder.AllowAnyOrigin()
+            //                          .AllowAnyMethod()
+            //                          .AllowAnyHeader());
+            //});
 
             var app = builder.Build();
 
@@ -70,6 +70,8 @@ namespace TestKafka
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+
+            //app.UseCors("AllowAllOrigins");
 
 
             app.MapControllers();

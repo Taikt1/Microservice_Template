@@ -1,14 +1,31 @@
-﻿using StackExchange.Redis;
+﻿using FirebaseAdmin.Messaging;
+using StackExchange.Redis;
 
 namespace Notification.App.Redis
 {
     public class RedisKeyExpirationSubscriber : BackgroundService
     {
         private readonly IConnectionMultiplexer _redis;
+        private readonly IResponseCache _responseCache;
 
-        public RedisKeyExpirationSubscriber(IConnectionMultiplexer redis)
+        public RedisKeyExpirationSubscriber(IConnectionMultiplexer redis, IResponseCache responseCache)
         {
             _redis = redis;
+            _responseCache = responseCache;
+        }
+
+        private List<string> GetDriverLogin(List<string> list)
+        {
+            var driverlist = new List<string>();
+            foreach (var driver in list)
+            {
+                string[] value = driver.Split(':');
+                if (driver != null)
+                {
+                    driverlist.Add(value[value.Length - 1]);
+                }
+            }
+            return driverlist;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -21,11 +38,26 @@ namespace Notification.App.Redis
                 Console.WriteLine($"[Redis Expired] Key expired: {key}");
 
                 // Gửi thông báo FCM
-                //await _firebaseService.SendNotificationToClientAsync(key);
+                var keySplit = key.ToString().Split(':');
+
+                var messageRemove = new Message()
+                {
+                    Token = keySplit[keySplit.Length - 1],
+                    Notification = new FirebaseAdmin.Messaging.Notification
+                    {
+                        Title = "Have a car",
+                        Body = $"tripID={keySplit[keySplit.Length - 2]}"
+                    }
+                };
+
+                string response = await FirebaseMessaging.DefaultInstance.SendAsync(messageRemove);
+
+
             });
 
             // Không kết thúc task để giữ subscriber chạy
             await Task.Delay(Timeout.Infinite, stoppingToken);
         }
     }
+
 }

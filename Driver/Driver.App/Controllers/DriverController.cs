@@ -54,7 +54,7 @@ namespace Notification.App.Controllers
         [HttpPost("logout")]
         public async Task<IActionResult> Logout([FromQuery] string driverId)
         {
-            await _responseCache.DeleteKeyInRedis("fcm-token-driver:", driverId);
+            await _responseCache.DeleteKeyInRedis("fcm-token-driver", driverId);
             return Ok(new { message = "Da dang xuat thanh cong" });
         }
 

@@ -40,19 +40,21 @@ namespace Notification.App.Redis
                 // Gửi thông báo FCM
                 var keySplit = key.ToString().Split(':');
 
-                var messageRemove = new Message()
+                var fcmToken = await _responseCache.GetCacheAsJsonAsync<string>("fcm-token-user:", keySplit[keySplit.Length - 1]);
+
+                if (fcmToken != null)
                 {
-                    Token = keySplit[keySplit.Length - 1],
-                    Notification = new FirebaseAdmin.Messaging.Notification
+                    var messageRemove = new Message()
                     {
-                        Title = "Have a car",
-                        Body = $"tripID={keySplit[keySplit.Length - 2]}"
-                    }
-                };
-
-                string response = await FirebaseMessaging.DefaultInstance.SendAsync(messageRemove);
-
-
+                        Token = fcmToken,
+                        Notification = new FirebaseAdmin.Messaging.Notification
+                        {
+                            Title = "Booking is fail",
+                            Body = $"tripID={keySplit[keySplit.Length - 2]}"
+                        }
+                    };
+                    string response = await FirebaseMessaging.DefaultInstance.SendAsync(messageRemove);
+                }
             });
 
             // Không kết thúc task để giữ subscriber chạy

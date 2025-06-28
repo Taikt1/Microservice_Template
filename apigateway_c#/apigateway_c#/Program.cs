@@ -39,6 +39,7 @@ namespace apigateway_c_
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseCors("AllowAllOrigins");
 
             app.UseOcelot();
 

@@ -17,12 +17,18 @@ namespace Order.App.Controllers
         {
             _tripService = tripService;
             _producer = producer;
-
+        }
+        [HttpPut("finish-trip")]
+        public async Task<IActionResult> FinishTrip(string tripId)
+        {
+            var order = await _tripService.GetById(tripId);
+            await _producer.ProduceAsync("finish_trip", order.Id, order);
+            return Ok();
         }
 
 
         [HttpPut("finish-order")]
-        public async Task<IActionResult> UpdateOrder(string Id, string status)
+        public async Task<IActionResult> Payment(string Id, string status)
         {
             // Logic to update an order
             var trip = _tripService.GetById(Id).Result;
@@ -36,12 +42,9 @@ namespace Order.App.Controllers
 
             await _tripService.UpdateAsync(Id, trip);
 
-            await _producer.ProduceAsync("finish_order", Id, trip);
+            await _producer.ProduceAsync("payment_finish", Id, trip);
 
             return Ok();
-
-
-
 
         }
 

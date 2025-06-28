@@ -8,7 +8,6 @@ namespace Driver.App.Model
     {
         [BsonId] // ⬅ Gắn để Mongo biết đây là _id
         [BsonRepresentation(BsonType.ObjectId)]
-        [JsonIgnore] // ⬅ Bỏ qua khi serialize sang JSON
         public string? Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }

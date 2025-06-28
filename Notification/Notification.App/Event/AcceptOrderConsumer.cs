@@ -55,7 +55,7 @@ namespace Notification.App.Event
                             Notification = new FirebaseAdmin.Messaging.Notification
                             {
                                 Title = "Have a car",
-                                Body = $"ID customer={value.CustomerId} - tripID={value.Id} - Diemdon={value.PickupLocation} - DiemDen={value.DropoffLocation}"
+                                Body = $"ID customer={value.CustomerId} - tripID={value.Id} - Diemdon={value.PickupLocation} - DiemDen={value.DropoffLocation} - Price={value.Price}"
                             }
                         };
 
@@ -63,9 +63,28 @@ namespace Notification.App.Event
                     }
                 }, stoppingToken), stoppingToken);
 
-                _ = Task.Run(() => _consumer1.ConsumeAsync("finish_order", async (key, value) =>
+                _ = Task.Run(() => _consumer1.ConsumeAsync("finish_trip", async (key, value) =>
+                {
+                    var getValue = await _responseCache.GetCacheAsJsonAsync<string>("fcm-token-user:", value.CustomerId.ToString());
+
+                    var message = new Message()
                     {
-                        var getValue = await _responseCache.GetCacheAsJsonAsync<string>("fcm-token-user:", value.CustomerId.ToString());
+                        Token = getValue,
+                        Notification = new FirebaseAdmin.Messaging.Notification
+                        {
+                            Title = "Finish trip",
+                            Body = $"ID customer={value.CustomerId} - tripID={value.Id} - Diemdon={value.PickupLocation} - DiemDen={value.DropoffLocation} - Status={value.Status} - StarTime={value.StartTime} - EndTime={value.EndTime}"
+                        }
+                    };
+
+                    string response = await FirebaseMessaging.DefaultInstance.SendAsync(message);
+
+                }, stoppingToken
+                ), stoppingToken);
+
+                _ = Task.Run(() => _consumer1.ConsumeAsync("payment_finish", async (key, value) =>
+                    {
+                        var getValue = await _responseCache.GetCacheAsJsonAsync<string>("fcm-token-driver:", value.DriverId.ToString());
 
                         var message = new Message()
                         {
@@ -78,6 +97,8 @@ namespace Notification.App.Event
                         };
 
                         string response = await FirebaseMessaging.DefaultInstance.SendAsync(message);
+
+
                     },stoppingToken
                 ), stoppingToken);
 

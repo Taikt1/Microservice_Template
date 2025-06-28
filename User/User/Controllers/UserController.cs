@@ -49,7 +49,8 @@ namespace TestKafka.Controllers
                 PickupLocation = trip.PickupLocation,
                 DropoffLocation = trip.DropoffLocation,
                 CreatedAt = DateTime.UtcNow,
-                Status = null
+                Status = null,
+                Price=trip.Price
             };
 
             await _producer.ProduceAsync("find_car", evt.Id.ToString(), evt);
